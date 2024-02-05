@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   body
+   {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+   }
+   .main-div
+   {
+    background-color: hsl(0, 0%, 12%);
+    width: auto;
+    padding: 18px;
+    border-radius: 13px;
+   }
+   .upperdiv
+   {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .upperdiv>img
+   {
+    border-radius: 50%;
+    width: 85px;
+    margin-top: 12px;
+   }
+   .upperdiv>h2
+   {
+    margin-top:17px;
+    margin-bottom: 6px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+   }
+   .upperdiv>p
+   {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+   }
+   .lowerdiv
+   {
+    width: 350px;
+   }
+   .lowerdiv>ul
+   {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    row-gap: 22px;
+    margin-top: 22px;
+   }
+   .lowerdiv>ul a
+   {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    background-color: hsl(0, 0%, 20%);
+    width: calc(100% - 75px);
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 14px;
+   }
+   .lowerdiv>ul a:hover
+   {
+    background-color:hsl(75, 94%, 57%) ;
+    color: hsl(0, 0%, 12%);
+   }
+   @media only screen and (max-width: 375px) {
+    body
+    {
+      width: auto;
+    }
+   }
+  </style>
+</head>
+<body>
+  <main class="main-div">
+    <div class="upperdiv">
+      <img src="avatar-jessica.jpeg" alt="">
+      <h2>Jessica Randall</h2>
+      <p>London, United Kingdom</p>
+      <q style="font-size: 15px;color: hsl(0, 0%, 100%);">Front-end developer and avid reader.</q>
+    </div>
+    <div class="lowerdiv">
+      <ul>
+        <a href=""><li>GitHub</li></a>
+        <a href=""><li>Frontend Mentor</li></a>
+        <a href=""><li>Linkedln</li></a>
+        <a href=""><li>Twitter</li></a>
+        <a href=""><li>Instagram</li></a>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
